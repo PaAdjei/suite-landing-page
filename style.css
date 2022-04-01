@@ -12,7 +12,7 @@ html {
   background-color: #ffffff;
   position: relative;
   height: 200vh;
-  z-index: 20000;
+  z-index: 200;
 }
 a {
   text-decoration: none;
@@ -40,7 +40,7 @@ a {
 }
 .container {
   padding: 30px 100px;
-  height: 1200px;
+  height: 1250px;
 }
 .container-1 {
   padding: 30px 100px;
@@ -83,17 +83,15 @@ a {
 /* ----------------------main styles------------------------------------------- */
 .main_container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding-top: 2rem;
-  z-index: 99;
-}
-.main {
+  grid-template-columns: 3fr 1fr;
+  padding-top: 3rem;
 }
 .main_title h2 {
-  font-size: 5.2rem;
+  font-size: 5rem;
   color: #172339;
   padding-bottom: 1rem;
   font-family: "Epilogue", Regular;
+  padding-right: 8rem;
   font-weight: 600;
 }
 .main_para {
@@ -124,8 +122,9 @@ a {
 }
 @media (min-width: 380px) and (max-width: 520px) {
   .main_title h2 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     max-width: 100%;
+    padding-right: 0;
   }
   .main_para {
     font-size: 1.2rem;
@@ -137,8 +136,6 @@ a {
   }
 }
 @media (min-width: 800px) and (max-width: 1300px) {
-  .main_container {
-  }
   .main_title {
     font-size: 2px;
   }
@@ -181,7 +178,7 @@ a {
 .image-2 {
   position: absolute;
   top: 8rem;
-  left: 25rem;
+  left: 30rem;
   z-index: 69;
 }
 .image-9 {
@@ -190,12 +187,11 @@ a {
 .image-1 {
   position: absolute;
   top: 5rem;
-  left: 30rem;
+  left: 38rem;
   z-index: -1;
   display: block;
 }
 .img-long {
-  height: 550px;
 }
 @media (min-width: 380px) and (max-width: 520px) {
   .image-2 {
@@ -206,19 +202,19 @@ a {
 
 .photo-1 {
   position: absolute;
-  top: 41rem;
+  top: 46rem;
   left: 9rem;
   z-index: 99;
 }
 .curve-2 {
   position: absolute;
   top: 55rem;
-  left: 27rem;
+  left: 34rem;
 }
 .image-6 {
   position: absolute;
-  top: 45rem;
-  left: 4rem;
+  top: 50rem;
+  left: 5rem;
 }
 
 /* ----------------------------End ofAbsolute Style-------------------------------- */
@@ -228,12 +224,12 @@ a {
   padding: 30px 100px;
   position: absolute;
   height: 100vh;
-  top: 850px;
+  top: 950px;
 }
 .container-3 {
   background-color: #172339;
   border-radius: 20px;
-  height: 90vh;
+  height: 70vh;
   padding: 20px 50px;
 }
 .frame-content {
@@ -241,16 +237,19 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 500px;
-  padding-right: 150px;
+  padding-left: 700px;
+  padding-right: 200px;
   font-size: 16px;
-  padding-top: 140px;
+  padding-top: 80px;
+  color: #f3ede7;
 }
 .frame-title {
   font-size: 42px;
   word-spacing: 5px;
   padding-bottom: 30px;
-  color: #f3ede7;
+}
+.frame-content > div {
+  padding-bottom: 2.5rem;
 }
 .frame-title span {
   font-weight: bold;
@@ -267,6 +266,7 @@ a {
 .frame-highlight h3 {
   font-size: 20px;
   color: #f3ede7;
+  line-height: 8px;
   padding-bottom: 10px;
 }
 .frame-highlight p {
@@ -275,8 +275,8 @@ a {
   word-spacing: 5px;
 }
 .image-3 {
-  width: 340px;
-  height: 565px;
+  width: 400px;
+  height: 605px;
 }
 @media (max-width: 780px) {
 }
@@ -359,11 +359,12 @@ a {
     width: 100%;
   }
   .container-1 {
-    padding: 0;
+    padding: 8px;
     top: 52rem;
   }
   .container-3 {
-    padding: 0;
+    padding: 10;
+    height: 40rem;
   }
   .curve-2 {
     top: 66rem;
